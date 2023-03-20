@@ -118,6 +118,9 @@ router.get('/', function(req, res){
 });
 
 
+console.log("success");
+
+
 app.use('/.netlify/functions/api',router);
 
 module.exports.handler = serverless(app);
